@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   greet:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: say hello to user
         run: echo "hello dosto"
