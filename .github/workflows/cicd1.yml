@@ -1,0 +1,30 @@
+name: cicd
+
+on:
+ push:
+  branches:
+   - main
+jobs:
+ cicd:
+    runs-on: ubuntu-latest
+    steps:
+  - name: checkout code
+    run: echo "code clone from github"
+  build:
+   runs-on: ubuntu-latest
+   steps:
+  - name: build docker container 
+    run: echo "docker container build"
+  test:
+   runs-on: ubuntu-latest
+  steps:
+  - name: test container
+    run: echo "testing container"
+  deploy:
+   runs-on: ubuntu-latest
+   steps:
+   - name: deployed container
+     run: echo "conatainer deployed"
+  
+    
+ 
